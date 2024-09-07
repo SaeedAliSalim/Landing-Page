@@ -1,0 +1,781 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    text-transform: capitalize;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: #0B9586;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+
+
+nav .logo {
+    position: relative;
+}
+
+nav .logo img {
+    display: block;
+}
+
+
+nav .logo {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav .logo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 149, 133, 0.797);
+}
+
+nav .menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .menu ul li {
+    margin: 0 5rem;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    font-size: 25px;
+}
+
+nav .menu ul li:first-child {
+    background-color: #0A8C7E;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    text-align: right;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* hero */
+
+.hero {
+    max-width: 100%;
+    height: auto;
+    background: url(../images/solar-panels-meadow\ 1.png) center center/cover no-repeat;
+    padding: 5rem 18rem;
+}
+
+.hero .content-item {
+    width: 20rem;
+}
+
+.hero .bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15rem;
+
+}
+
+.hero .bar {
+    width: 100%;
+    height: 5px;
+    margin: 0px 20px 0px 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #494747;
+}
+
+.hero .bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.hero span {
+    color: #fff;
+    font-size: 25px;
+}
+
+.hero .text-content {
+    width: 60rem;
+}
+
+.hero .text-content h2 {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 20px;
+
+}
+
+.hero .text-content p {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.hero .content a,
+.power .content a {
+    color: #fff;
+    background-color: #0A8C7E;
+    font-size: 20px;
+    margin: 1rem 1rem 0 0;
+    width: 13rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.hero .content a:last-child {
+    background-color: #FFBB1C;
+    color: #333;
+}
+
+/* Friendlies */
+
+.friendlies {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 15rem;
+}
+
+.friendlies-text {
+    display: inline-block;
+    width: 40rem;
+    margin: 0 2rem;
+}
+
+.friendlies-img {
+    display: inline-block;
+    width: 40rem;
+    text-align: center;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.friendlies-img .price {
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+    width: 18rem;
+    height: 13rem;
+    background-color: #FFBB1C;
+    border-radius: 20px;
+}
+
+.friendlies-img .price p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem
+}
+
+.friendlies-img .price i {
+    font-size: 3rem;
+    text-align: left;
+    padding: 2rem;
+    display: block;
+}
+
+.friendlies h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.friendlies p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5rem;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+ol li::before {
+    content: "0 " counter(item) "/";
+    counter-increment: item;
+    color: #A3CE6B;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+
+/* power */
+
+.power {
+    max-width: 100%;
+    height: 40rem;
+    background: url(../images/8116\ 1.png) center center/cover no-repeat;
+    padding: 0 18rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.power .content {
+    width: 50rem;
+}
+
+.power .content h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.power .content p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.power .content a {
+    background-color: #FFBB1C;
+    color: #333;
+}
+
+/* Kits */
+.kits {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 15rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.kits .text {
+    padding: 0 10rem;
+}
+
+.kits h2 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.kits p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5rem;
+}
+
+
+
+.kits .card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.kits .card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.kits .card-desc,
+.energy .card-desc {
+    padding: 1rem;
+    text-align: left;
+}
+
+.kits .card-desc h3,
+.energy .card-desc h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.kits .card-desc a,
+.energy .card-desc a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #48B097;
+}
+
+.kits .card-desc span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #48B097;
+    margin-left: 0.5rem;
+    position: absolute;
+}
+
+/* replacement */
+
+.replacement {
+    width: 100%;
+    height: 40rem;
+    padding: 3rem 15rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    background: url(../images/81162.png) center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.replacement .content {
+    width: 50rem;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    border-radius: 20px;
+    /* border: 1px solid #fff; */
+    backdrop-filter: blur(5px);
+}
+
+.replacement h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.replacement p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* energy */
+
+.energy {
+    width: 100%;
+    height: auto;
+    padding: 3rem 8rem;
+    margin-bottom: 5rem;
+    background-color: #FFFBF3;
+    margin-top: -5rem;
+}
+
+.energy .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.energy .content-text {
+    width: 30rem;
+    position: relative;
+}
+
+.energy .content-text i {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #0A8C7E;
+    box-shadow: 2px 2px 3px 10px rgb(60, 171, 144, 0.2);
+}
+
+.energy .content-text h2 {
+    font-size: 5rem;
+    color: #333;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.energy .content-text p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.energy .cards {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    width: 60rem;
+}
+
+.energy .cards .card {
+    width: 25rem;
+    height: 30rem;
+    border: 2px solid #6BBEA8;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.energy .cards .card:last-child {
+    height: 35rem;
+}
+
+.energy .cards .card img {
+    width: 20rem;
+    height: 100px;
+    object-fit: cover;
+}
+
+.energy .cards .card .img {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-color: rgb(107, 190, 168);
+}
+
+.energy .cards .card .img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 149, 133, 0.4);
+}
+
+.energy .cards .card h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.energy .cards .card p {
+    margin-bottom: 2rem;
+}
+
+
+/* values */
+
+.values {
+    width: 100%;
+    height: auto;
+    padding: 3rem 8rem;
+}
+
+.values .top {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.values .top-text {
+    margin: 0 13rem;
+}
+
+.values .top h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.values .top p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.values .cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 1px;
+}
+
+.values .cards .card {
+    width: 25rem;
+    height: auto;
+    background-color: #F5FBF9;
+    border: 1px solid #48B097;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+
+    margin-bottom: 2rem;
+}
+
+.values .cards .card i {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: #0A8C7E;
+}
+
+.values .cards .card h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.values .cards .card p {
+    color: #737E8C;
+    font-size: 1.2rem;
+}
+
+.values .down {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.values .down-text {
+    width: 30rem;
+}
+
+.values .down .down-text i {
+    font-size: 5rem;
+    color: #0A8C7E;
+    margin-bottom: 1rem;
+}
+
+.values .down .down-text h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.values .down .down-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.values .carousel {
+    width: 60rem;
+    padding: 0rem 2rem;
+    border: 1px solid #48B097;
+    border-radius: 10px;
+    background-color: #f4faf9;
+}
+
+.values .carousel .carousel-top {
+    position: relative;
+}
+
+.values .carousel .carousel-top h4 {
+    color: #0A8C7E;
+    font-size: 1.5rem;
+    padding: 1.5rem 0 3rem 0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.values .carousel .carousel-top i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.values .carousel .carousel-top i:nth-child(2) {
+    top: 0;
+    right: 1.5rem;
+}
+
+.values .carousel .carousel-top i:nth-child(3) {
+    top: 0;
+    right: 3rem;
+}
+
+.values .carousel .carousel-top i:nth-child(4) {
+    top: 0;
+    right: 4.5rem;
+}
+
+.values .carousel .carousel-top i:nth-child(5) {
+    top: 0;
+    right: 6rem;
+    background-color: #494747;
+}
+
+.values .carousel .carousel-top .dots {
+    position: absolute;
+}
+
+.values .carousel .carousel-top p {
+    font-size: 1.5rem;
+    padding: 7rem 0;
+    width: 50rem;
+}
+
+.carousel .carousel-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left {
+    position: relative;
+
+}
+
+.carousel-text {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    height: 2rem;
+    width: 40rem;
+    line-height: 2rem;
+}
+
+.carousel-down .right i {
+    border: 1px solid #48B097;
+
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #0A8C7E;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #283646;
+    padding: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer ul {
+    padding: 2rem 0;
+
+}
+
+footer a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    color: #8c9199;
+
+}
+
+
+footer .bottom span {
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-right: 1px solid #8c9199;
+}
+
+footer .right {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30rem;
+}
+
+.headline {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.signup-form {
+    position: relative;
+}
+
+input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    background-color: #3b4857;
+}
+
+footer .right form a {
+    background-color: #ffbb1c;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
